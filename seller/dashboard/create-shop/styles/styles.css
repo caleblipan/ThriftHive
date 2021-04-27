@@ -1,0 +1,318 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+}
+
+p, li
+{
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #333;
+}
+
+[class*="center-col-"]
+{
+    float: left;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[class*="col-"]
+{
+    float: left;
+    height: 100%;
+    padding: 16px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.historical-portfolio-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-2 {width: 17.5%; padding: 0 8px;}
+.col-3 {width: 25%; padding: 0 24px 0 24px}
+.col-4 {width: 33%;}
+.col-6 {width: 50%}
+.col-7 {width: 60%;}
+.col-8 {width: 70%;}
+.col-9 {width: 75%; padding: 0 16px 0 16px}
+.col-10 {width: 80%; padding: 0 16px 0 16px}
+.col-12 {width: 100%;}
+.center-col-6 {width: 50%;}
+.center-col-12, .center-col-12-nav {width: 100%;}
+.wrapper {padding: 64px 10%}
+
+nav {
+    background: white;
+}
+            
+.top-nav ul {
+    list-style-type: none;
+}
+
+.top-nav li {
+    padding: 8px 24px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.top-large-screen
+{
+    background-image: url(jakarta.webp);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0 1px 1000px #000000;
+}
+    
+.shade
+{
+    background: rgba(0,0,0, 0.65);
+    width: 100%;
+    height: 100%;
+    padding: 128px 12.5%;
+    font-family: 'Playfair Display', serif;
+    color: rgba(255,255,255, 0.9);
+}
+
+.shade h1
+{
+    font-size: 41px;
+    line-height: 64px;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+    animation: 1s moveUp forwards;
+}  
+
+.shade h2
+{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes moveUp
+{
+    from {opacity: 0; top: 8px}
+    to {opacity: 1; top: 0px}
+}
+
+@keyframes moveRight
+{
+    from {opacity: 0; right: 8px}
+    to {opacity: 1; right: 0px}
+}
+
+.shade p
+{
+    font-size: 25px;
+    line-height: 41px;
+    margin: 0;
+    position: relative;
+    animation: 1s moveUp forwards;
+    color: inherit;
+}
+
+.opening-text
+{
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav img {
+    width: 250px
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)), url(1.jpg);
+    background-position: 0% 75%;
+    background-repeat: no-repeat;
+    padding: 64px 10%;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 48px;
+    line-height: 1.35
+}
+
+.jumbotron i {
+    vertical-align: text-top;
+    padding-right: 8px;
+}
+
+button {
+    background: #ffab00;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: #333;
+}
+
+
+
+.login-form {
+    width: 360px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2.5px 10px rgba(0,0,0,0.25);
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 60px;    
+    font-family: 'Varela Round', sans-serif;
+	font-weight: bold;
+	color: #303030;
+	font-size: 32px;
+}
+
+#customBtn {
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+    white-space: nowrap;
+    padding: 15px 12px;
+  }
+  #customBtn:hover {
+    cursor: pointer;
+  }
+  span.label {
+    font-family: serif;
+    font-weight: normal;
+  }
+  span.icon {
+    background: url('btn_google_light_normal_ios.svg') center no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+  }
+
+  span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 16px;
+    /* Use the Poppins font that is loaded in the <head> */
+    font-family: 'Varela Round', sans-serif;
+  }
+
+
+.logbtn {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #ffab00;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.logbtn:hover {
+    background-position: right;
+}
+
+.bottom-text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bottom-text p {
+    font-weight: 400;
+}
+
+.txtb {
+    border-bottom: 1.5px solid #eee;
+    position: relative;
+    margin: 30px 0;
+}
+
+.txtb input {
+    font-size: 16px;
+    color: #303030;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.txtb span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.txtb span::after {
+    top: 100%;
+    left: 0;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    background-size: 200%;
+    transition: 0.5s;
+    
+}
+
+.focus+span::before {
+    top: -5px;
+}
+
+.focus+span::after {
+    width: 100%;
+    background-position: right;
+}

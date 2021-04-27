@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <!-- Responsive Website -->
+        <meta name="viewport" content="width=viewport-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles/styles.css">    
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    </head>
+    <body>
+        <form action="login.php" method="POST" class="login-form" id="daftar-form">
+            <h1>Login</h1>
+            <!-- Username -->
+            <div class="txtb" style="margin-bottom: 8px">
+                <input type="text" name="username" style="text-transform: lowercase"required>
+                <span data-placeholder="Username"></span>
+            </div>
+            <!-- Password -->
+            <div class="txtb" style="margin-bottom: 8px">
+                <input type="password" name="password" id="password" required>
+	            <span data-placeholder="Password"></span>	
+		        <div style="position: absolute;top: 14px; right: 14px;">
+        		  <i class="far fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+                </div>
+            </div>
+            <br>
+            <input type="submit" class="logbtn" name="login" value="LOGIN">
+            <div class="bottom-text">
+                <p style="color: #323232">Don't have an account? <a href="../../create-account/buyer" style="color: #ffab00">Register</a></p>
+            </div>
+        </form>
+
+        <script src="scripts/jquery-3.5.1.min.js" async></script>
+        <script src="scripts/scripts.js" async></script>
+    </body>
+</html>
